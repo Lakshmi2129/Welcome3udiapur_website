@@ -1,22 +1,20 @@
-temp = input()
+s={'Rahul': {'English': 70, 'Maths': 66, 'Science': 80},
+ 'Virat': {'English': 58, 'Maths': 88, 'Science': 72},
+ 'Rohit': {'English': 91, 'Maths': 40, 'Science': 65}}
 
-# count = len(temp)
-# result = ''
 
-result_temp = sorted(temp,reverse=True)
-if temp == result_temp:
-  print("Its Palindrome")
-else:
-  print("Not palindrome")
+# Rank of Virat is 1
+# Rank of Rahul is 2
+# Rank of Rohit is 3
 
-# for x in temp:
-#   print(x)
-#   result = result + temp[count]
-#   count = count - 1
-  
-# if  result == temp:
-#   print("Its Palindrome")  
-# else:
-#   print("Not Palindrome")
-  
-  
+result = 0
+name = ''
+
+for x in s:
+  temp = 0
+  for y in s[x]:
+    temp += s[x][y]
+  if result < temp:
+      result = temp
+      name = x
+print(result,name)

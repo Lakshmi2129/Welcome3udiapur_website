@@ -1,581 +1,588 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100');
-.navbar-light .navbar-brand {
-    color: #41464b !important;
-}
-
-.navbar-light .navbar-toggler {
-    border-color: white;
-}
-
-.container-fluid {
-    position: fixed;
-    z-index: 111;
-    /* background: white; */
-    padding: 0 !important;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Lato:100');
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    /* overflow: hidden; */
-}
-
-.title {
-    margin: 0 auto;
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-size: 3rem;
-    position: absolute;
-}
-
-.containers {
-    width: 100%;
-    height: 630px;
-    /* transition: changeBackgroundImage 5s ease-in-out; */
-    animation: changeBackgroundImage 13s infinite;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background-position: center center;
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    background-size: cover;
-}
-
-@keyframes changeBackgroundImage {
-    0% {
-        background-image: url("https://indiathrills.com/wp-content/uploads/2020/07/1334423290_e0fee7b87b_o-1-2.jpg");
+    @import url('https://fonts.googleapis.com/css?family=Lato:100');
+    .navbar-light .navbar-brand {
+        color: #41464b !important;
     }
-    25% {
-        background-image: url("https://cf.bstatic.com/xdata/images/hotel/max1024x768/428101677.jpg?k=661a135eb19df3990938d8ea7293869bd5394456d14ea1e5620ff498a4e3e7d4&o=&hp=1");
+    
+    .navbar-light .navbar-toggler {
+        border-color: white;
     }
-    50% {
-        background-image: url('https://picsum.photos/id/1015/1500/1000');
+    
+    .container-fluid {
+        position: fixed;
+        z-index: 111;
+        /* background: white; */
+        padding: 0 !important;
     }
-    75% {
-        background-image: url("https://static2.tripoto.com/media/filter/tst/img/397931/TripDocument/1504160627_1504160618289.jpg");
+    
+    @import url('https://fonts.googleapis.com/css?family=Lato:100');
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        /* overflow: hidden; */
     }
-    100% {
-        background-image: url('https://img.cdn.zostel.com/zostel/gallery/images/XvbIv6fcQVSu2z1bbw4CJA/udaipur-20201112105635.jpg');
+    
+    .title {
+        margin: 0 auto;
+        padding: 1rem;
+        color: white;
+        /* font-family: 'Lato', sans-serif; */
+        font-size: 3rem;
+        position: absolute;
     }
-}
-
-.scrol_left {
-    top: 290px;
-    /* overflow: hidden; */
-    position: relative;
-}
-
-.scrol_left p {
-    background-color: transparent;
-    font-size: 20px;
-    font-weight: 400;
-    color: #FBFBFB;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    width: 1236px;
-    height: 28px;
-    line-height: 50px;
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    -moz-animation: scroll-left 15s linear infinite;
-    -webkit-animation: scroll-left 15s linear infinite;
-    animation: scroll-left 15s linear infinite;
-}
-
-
-/* Move it (define the animation) */
-
-@-moz-keyframes scroll-left {
-    0% {
+    
+    .containers {
+        width: 100%;
+        height: 630px;
+        /* transition: changeBackgroundImage 5s ease-in-out; */
+        animation: changeBackgroundImage 13s infinite;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        background-size: cover;
+    }
+    
+    @keyframes changeBackgroundImage {
+        0% {
+            background-image: url("https://indiathrills.com/wp-content/uploads/2020/07/1334423290_e0fee7b87b_o-1-2.jpg");
+        }
+        25% {
+            background-image: url("https://cf.bstatic.com/xdata/images/hotel/max1024x768/428101677.jpg?k=661a135eb19df3990938d8ea7293869bd5394456d14ea1e5620ff498a4e3e7d4&o=&hp=1");
+        }
+        50% {
+            background-image: url('https://picsum.photos/id/1015/1500/1000');
+        }
+        75% {
+            background-image: url("https://static2.tripoto.com/media/filter/tst/img/397931/TripDocument/1504160627_1504160618289.jpg");
+        }
+        100% {
+            background-image: url('https://img.cdn.zostel.com/zostel/gallery/images/XvbIv6fcQVSu2z1bbw4CJA/udaipur-20201112105635.jpg');
+        }
+    }
+    
+    .scrol_left {
+        top: 290px;
+        /* overflow: hidden; */
+        position: relative;
+    }
+    
+    .scrol_left p {
+        background-color: transparent;
+        font-size: 20px;
+        font-weight: 400;
+        color: #FBFBFB;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        width: 1236px;
+        height: 28px;
+        line-height: 50px;
         -moz-transform: translateX(100%);
-    }
-    100% {
-        -moz-transform: translateX(-100%);
-    }
-}
-
-@-webkit-keyframes scroll-left {
-    0% {
         -webkit-transform: translateX(100%);
-    }
-    100% {
-        -webkit-transform: translateX(-100%);
-    }
-}
-
-@keyframes scroll-left {
-    0% {
-        -moz-transform: translateX(100%);
-        /* Browser bug fix */
-        -webkit-transform: translateX(100%);
-        /* Browser bug fix */
         transform: translateX(100%);
+        -moz-animation: scroll-left 15s linear;
+        -webkit-animation: scroll-left 15s linear;
+        animation: scroll-left 15s linear;
     }
-    100% {
-        -moz-transform: translateX(-100%);
-        /* Browser bug fix */
-        -webkit-transform: translateX(-100%);
-        /* Browser bug fix */
-        transform: translateX(-100%);
+    /* Move it (define the animation) */
+    
+    @-moz-keyframes scroll-left {
+        0% {
+            -moz-transform: translateX(100%);
+        }
+        100% {
+            -moz-transform: translateX(-100%);
+        }
     }
-}
-
-form {
-    color: #555;
-    display: flex;
-    padding: 2px;
-    border: 1px solid currentColor;
-    border-radius: 15px;
-    margin: 0 0 30px;
-}
-
-input[type=search] {
-    border: none;
-    background: transparent;
-    margin: 0;
-    padding: 7px 8px;
-    font-size: 14px;
-    color: inherit;
-    border: 1px solid transparent;
-    border-radius: inherit;
-}
-
-input[type=search]::placeholder {
-    color: #bbb;
-}
-
-input[type=search]:focus {
-    box-shadow: 0 0 3px 0 #1183d6;
-    border-color: #1183d6;
-    outline: none;
-}
-
-form.nosubmit {
-    margin-top: 8px;
-    border: none;
-    padding: 0;
-}
-
-input.nosubmit {
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    width: 25rem;
-    height: 30px;
-    padding: 9px 4px 5px 40px;
-    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
-}
-
-.header {
-    position: fixed;
-    top: -5px;
-    z-index: 10;
-    width: 1263px;
-    height: 62px;
-}
-
-.border {
-    margin-right: 15px;
-}
-
-.navbar {
-    position: fixed !important;
-    top: 54px;
-    height: 51px;
-    width: 1440px;
-    z-index: 10;
-    /* top: -13659px;
+    
+    @-webkit-keyframes scroll-left {
+        0% {
+            -webkit-transform: translateX(100%);
+        }
+        100% {
+            -webkit-transform: translateX(-100%);
+        }
+    }
+    
+    @keyframes scroll-left {
+        0% {
+            -moz-transform: translateX(100%);
+            /* Browser bug fix */
+            -webkit-transform: translateX(100%);
+            /* Browser bug fix */
+            transform: translateX(100%);
+        }
+        100% {
+            -moz-transform: translateX(-100%);
+            /* Browser bug fix */
+            -webkit-transform: translateX(-100%);
+            /* Browser bug fix */
+            transform: translateX(-100%);
+        }
+    }
+    
+    form {
+        color: #555;
+        display: flex;
+        padding: 2px;
+        border: 1px solid currentColor;
+        border-radius: 15px;
+        margin: 0 0 30px;
+    }
+    
+    input[type=search] {
+        border: none;
+        background: transparent;
+        margin: 0;
+        padding: 7px 8px;
+        font-size: 14px;
+        color: inherit;
+        border: 1px solid transparent;
+        border-radius: inherit;
+    }
+    
+    input[type=search]::placeholder {
+        color: #bbb;
+    }
+    
+    input[type=search]:focus {
+        box-shadow: 0 0 3px 0 #1183d6;
+        border-color: #1183d6;
+        outline: none;
+    }
+    
+    form.nosubmit {
+        margin-top: 8px;
+        border: none;
+        padding: 0;
+    }
+    
+    input.nosubmit {
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        width: 25rem;
+        height: 30px;
+        padding: 9px 4px 5px 40px;
+        background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+    }
+    
+    .header {
+        position: fixed;
+        top: -5px;
+        z-index: 10;
+        width: 1263px;
+        height: 62px;
+    }
+    
+    .border {
+        margin-right: 15px;
+    }
+    
+    .navbar {
+        position: fixed !important;
+        top: 54px;
+        height: 51px;
+        width: 1440px;
+        z-index: 10;
+        /* top: -13659px;
 bottom: -4095px; */
-}
-
-.lake_slider {
-    position: inherit;
-    margin-top: 47px;
-    overflow-y: hidden !important;
-}
-
-.navbar_brand {
-    position: relative;
-    left: 10px;
-}
-
-.navbar-brand {
-    position: relative;
-    /* top: -4px; */
-    padding-top: 0 !important;
-    font-size: medium !important;
-    font-weight: 500;
-}
-
-.dropdown-item {
-    font-weight: 500 !important;
-    font-size: large;
-    line-height: 25px;
-}
-
-.lake_text {
-    position: absolute;
-    top: 234px;
-    left: 259px;
-    width: 923px;
-    height: 126px;
-    color: #FBFBFB;
-    font-family: 'Lato';
-    font-size: 44px;
-    font-weight: 400;
-    line-height: 63.1px;
-    align-items: center;
-}
-
-.near_images {
-    top: 1.5rem;
-    height: 15rem;
-    position: relative;
-    left: 1.5rem;
-    width: 18rem;
-    border-radius: 10px;
-}
-
-.card {
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    width: 333px !important;
-    height: 348px !important;
-    position: relative;
-    left: 15px;
-    border-radius: 10px;
-    margin-left: 1rem;
-}
-
-.near_cards {
-    gap: 15px;
-    position: absolute;
-    top: 48rem;
-}
-
-.wedding_text {
-    left: 2rem;
-    top: 30.5rem;
-    position: relative;
-    width: 480px;
-    height: 460px;
-}
-
-.wedding_text1 {
-    left: 19rem;
-    top: 30.5rem;
-    position: relative;
-    width: 480px;
-    height: 460px;
-    border-right: 25px solid #5e2c2c;
-}
-
-.wedding_text2 {
-    left: 19rem;
-    top: 30.5rem;
-    position: relative;
-    width: 480px;
-    height: 460px;
-    /* border-right: 25px solid #5e2c2c; */
-}
-
-.palace_bg {
-    position: relative;
-    left: 2rem;
-}
-
-.weding_planning {
-    position: relative;
-    top: 550px;
-    left: 10rem;
-}
-
-.weding_planning1 {
-    position: relative;
-    top: 550px;
-    left: 5.5rem;
-}
-
-.first_tag {
-    font-size: 2.5rem;
-    color: #36648E;
-}
-
-.wedding_logo {
-    top: -4rem;
-    position: relative;
-    left: 2rem;
-}
-
-.second_tag {
-    font-size: 3.5rem;
-    color: #36648E;
-}
-
-.second_tag2 {
-    font-size: 4.5rem;
-    font-weight: 500;
-    /* background-color: black; */
-}
-
-.wedding_plan {
-    position: relative;
-    top: 12rem;
-    left: 51rem;
-}
-
-.wedding_planning1 {
-    position: relative;
-    top: 12rem;
-    left: 5rem;
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-    width: 7%;
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    font-size: 3rem !important;
-    font-weight: bolder;
-    height: 50px;
-    width: 50px;
-    color: #bbb;
-    /* background-color: white; */
-    background-color: 0 3px 10px rgba(242, 237, 237, 0.2);
-    ;
-    box-shadow: 0 3px 10px rgba(242, 237, 237, 0.2);
-}
-
-@media (max-width: 767px) {
-    .carousel-inner .carousel-item>div {
-        display: none;
     }
-    .carousel-inner .carousel-item>div:first-child {
-        display: block;
+    
+    .lake_slider {
+        position: inherit;
+        margin-top: 47px;
+        overflow-y: hidden !important;
     }
-}
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
-
-
-/* medium and up screens */
-
-@media (min-width: 768px) {
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-        transform: translateX(25%);
+    
+    .navbar_brand {
+        position: relative;
+        left: 10px;
     }
-    .carousel-inner .carousel-item-start.active,
+    
+    .navbar-brand {
+        position: relative;
+        /* top: -4px; */
+        padding-top: 0 !important;
+        font-size: medium !important;
+        font-weight: 500;
+    }
+    
+    .dropdown-item {
+        font-weight: 500 !important;
+        font-size: large;
+        line-height: 25px;
+    }
+    
+    .lake_text {
+        position: absolute;
+        top: 234px;
+        left: 259px;
+        width: 923px;
+        height: 126px;
+        color: #FBFBFB;
+        font-family: 'Lato';
+        font-size: 44px;
+        font-weight: 400;
+        line-height: 63.1px;
+        align-items: center;
+    }
+    
+    .near_images {
+        top: 1.5rem;
+        height: 15rem;
+        position: relative;
+        left: 1.5rem;
+        width: 18rem;
+        border-radius: 10px;
+    }
+    
+    .card {
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        width: 333px !important;
+        height: 348px !important;
+        position: relative;
+        left: 15px;
+        border-radius: 10px;
+        margin-left: 1rem;
+    }
+    
+    .near_cards {
+        gap: 15px;
+        position: absolute;
+        top: 48rem;
+    }
+    
+    .wedding_text {
+        left: 2rem;
+        top: 30.5rem;
+        position: relative;
+        width: 480px;
+        height: 460px;
+    }
+    
+    .wedding_text1 {
+        left: 15.8rem;
+        top: 30.5rem;
+        position: relative;
+        width: 480px;
+        height: 460px;
+        /* border-right: 25px solid #5e2c2c; */
+    }
+    
+    .wedding_text2 {
+        left: 19rem;
+        top: 30.5rem;
+        position: relative;
+        width: 480px;
+        height: 460px;
+        /* border-right: 25px solid #5e2c2c; */
+    }
+    
+    .palace_bg {
+        position: relative;
+        left: 2rem;
+    }
+    
+    .weding_planning {
+        position: relative;
+        top: 550px;
+        left: 10rem;
+    }
+    
+    .weding_planning1 {
+        position: relative;
+        top: 550px;
+        left: 5.5rem;
+    }
+    
+    .first_tag {
+        font-size: 2.5rem;
+        color: #36648E;
+    }
+    
+    .wedding_logo {
+        top: -4rem;
+        position: relative;
+        left: 2rem;
+    }
+    
+    .second_tag {
+        font-size: 3.5rem;
+        color: #36648E;
+    }
+    
+    .second_tag2 {
+        font-size: 4.5rem;
+        font-weight: 500;
+        /* background-color: black; */
+    }
+    
+    .wedding_plan {
+        position: relative;
+        top: 12rem;
+        left: 51rem;
+    }
+    
+    .wedding_planning1 {
+        position: relative;
+        top: 12rem;
+        left: 5rem;
+    }
+    
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 7%;
+    }
+    
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        font-size: 3rem !important;
+        font-weight: bolder;
+        height: 50px;
+        width: 50px;
+        color: #bbb;
+        /* background-color: white; */
+        background-color: 0 3px 10px rgba(242, 237, 237, 0.2);
+        ;
+        box-shadow: 0 3px 10px rgba(242, 237, 237, 0.2);
+    }
+    
+    @media (max-width: 767px) {
+        .carousel-inner .carousel-item>div {
+            display: none;
+        }
+        .carousel-inner .carousel-item>div:first-child {
+            display: block;
+        }
+    }
+    
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
     .carousel-inner .carousel-item-prev {
-        transform: translateX(-25%);
+        display: flex;
     }
-}
-
-@media (min-width: 1200px) {
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl {
-        max-width: 1271px;
+    /* medium and up screens */
+    
+    @media (min-width: 768px) {
+        .carousel-inner .carousel-item-end.active,
+        .carousel-inner .carousel-item-next {
+            transform: translateX(25%);
+        }
+        .carousel-inner .carousel-item-start.active,
+        .carousel-inner .carousel-item-prev {
+            transform: translateX(-25%);
+        }
     }
-}
-
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start {
-    transform: translateX(0);
-}
-
-.carousel-inner {
-    display: flex;
-    gap: 20px;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.near_map {
-    position: inherit;
-    width: 452px;
-    height: 537px;
-    /* top: 742px; */
-    left: 880px
-}
-
-.near_text {
-    color: #36648E;
-    padding: 2.5rem;
-    position: inherit;
-    font-size: 3.5rem;
-    height: 38px;
-    letter-spacing: 6px;
-    /* top: 790px; */
-    left: 15px
-}
-
-.dest_wed {
-    margin-top: 2rem;
-    width: 1230px;
-    height: 520px;
-    /* top: 90px; */
-    left: 20px;
-}
-
-.tour_images {
-    top: 1.5rem;
-    height: 12rem;
-    position: relative;
-    left: 1.5rem;
-    width: 14rem;
-    border-radius: 10px
-}
-
-.trending {
-    color: #36648E;
-    position: absolute;
-    font-size: 52px;
-    font-weight: 600;
-    line-height: 61.3px;
-    letter-spacing: 0.04em;
-    text-align: left;
-    /* width: 500px; */
-    height: 61px;
-    top: 113rem;
-    left: 470px;
-}
-
-.left_vector {
-    width: 240px;
-    top: -320px;
-    left: 215px;
-    border: 6px;
-    rotate: -180;
-    position: relative;
-}
-
-.right_vector {
-    width: 240px;
-    top: -320px;
-    left: 750px;
-    border: 6px;
-    rotate: -180;
-    position: relative;
-}
-
-.tour_cards {
-    gap: 15px;
-    position: absolute;
-    top: 119rem
-}
-
-.treanding_images {
-    position: inherit;
-    margin-left: 1.2rem;
-    margin-top: 11rem;
-    position: inherit;
-    display: inline;
-}
-
-.adv_hotel {
-    position: inherit;
-    width: 1156px;
-    height: 428px;
-    top: 5rem;
-    left: 142px
-}
-
-.left_online_vector {
-    width: 240px;
-    top: -275px;
-    left: 260px;
-    border: 6px;
-    rotate: -180;
-    position: relative;
-}
-
-.right_online_vector {
-    width: 240px;
-    top: -355px;
-    left: 955px;
-    border: 6px;
-    rotate: -180;
-    position: relative;
-}
-
-.online_trending {
-    color: #36648E;
-    position: relative;
-    font-size: 52px;
-    font-weight: 600;
-    line-height: 61.3px;
-    letter-spacing: 0.04em;
-    text-align: left;
-    /* width: 500px; */
-    height: 61px;
-    top: -310px;
-    left: 517px;
-}
-
-.online_dir {
-    position: inherit;
-    width: 1440px;
-    height: 400px;
-    top: 9rem;
-}
-
-.online_hotels {
-    position: inherit;
-    width: 1156px;
-    height: 429px;
-    top: 12rem;
-    left: 136px
-}
-
-.yt_insta {
-    position: inherit;
-    width: 1440px;
-    height: 572px;
-    top: 17rem;
-}
-
-.online_cards {
-    position: relative;
-    top: -17rem;
-}
-
-.onlineCard {
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    width: 230px !important;
-    height: 175px !important;
-    position: relative;
-    left: 5px;
-    border-radius: 10px;
-    border: 1px solid #5f5f5957;
-    /* margin-left: 1rem; */
-}
-
-.online_images {
-    height: 7.5rem;
-    top: 1rem;
-    height: -6rem;
-    position: relative;
-    left: 1px;
-    width: 12.5rem;
-    border-radius: 10px;
-}
-
-.fw_weight {
-    font-weight: 400;
-}
+    
+    @media (min-width: 1200px) {
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl {
+            max-width: 1271px;
+        }
+    }
+    
+    .carousel-inner .carousel-item-end,
+    .carousel-inner .carousel-item-start {
+        transform: translateX(0);
+    }
+    
+    .carousel-inner {
+        display: flex;
+        gap: 20px;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .near_map {
+        position: inherit;
+        width: 452px;
+        height: 537px;
+        /* top: 742px; */
+        left: 880px
+    }
+    
+    .near_text {
+        color: #36648E;
+        padding: 2.5rem;
+        position: inherit;
+        font-size: 3.5rem;
+        height: 38px;
+        letter-spacing: 6px;
+        /* top: 790px; */
+        left: 15px
+    }
+    
+    .dest_wed {
+        margin-top: 2rem;
+        width: 1230px;
+        height: 520px;
+        /* top: 90px; */
+        left: 20px;
+    }
+    
+    .tour_images {
+        top: 1.5rem;
+        height: 12rem;
+        position: relative;
+        left: 0.4rem;
+        width: 14rem;
+        border-radius: 10px
+    }
+    
+    @media (min-width: 1200px) {
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl {
+            max-width: 1250px;
+        }
+    }
+    
+    .trending {
+        color: #36648E;
+        position: absolute;
+        font-size: 52px;
+        font-weight: 600;
+        line-height: 61.3px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        /* width: 500px; */
+        height: 61px;
+        top: 113rem;
+        left: 380px;
+    }
+    
+    .left_vector {
+        width: 240px;
+        top: -320px;
+        left: 124px;
+        border: 6px;
+        rotate: -180;
+        position: relative;
+    }
+    
+    .right_vector {
+        width: 240px;
+        top: -320px;
+        left: 660px;
+        border: 6px;
+        rotate: -180;
+        position: relative;
+    }
+    
+    .tour_cards {
+        gap: 15px;
+        position: absolute;
+        top: 119rem
+    }
+    
+    .treanding_images {
+        position: inherit;
+        margin-left: 1.2rem;
+        margin-top: 11rem;
+        position: inherit;
+        display: inline;
+    }
+    
+    .adv_hotel {
+        position: inherit;
+        width: 1156px;
+        height: 428px;
+        top: 5rem;
+        left: 142px
+    }
+    
+    .left_online_vector {
+        width: 240px;
+        top: -275px;
+        left: 260px;
+        border: 6px;
+        rotate: -180;
+        position: relative;
+    }
+    
+    .right_online_vector {
+        width: 240px;
+        top: -355px;
+        left: 955px;
+        border: 6px;
+        rotate: -180;
+        position: relative;
+    }
+    
+    .online_trending {
+        color: #36648E;
+        position: relative;
+        font-size: 52px;
+        font-weight: 600;
+        line-height: 61.3px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        /* width: 500px; */
+        height: 61px;
+        top: -310px;
+        left: 517px;
+    }
+    
+    .online_dir {
+        position: inherit;
+        width: 1440px;
+        height: 400px;
+        top: 9rem;
+    }
+    
+    .online_hotels {
+        position: inherit;
+        width: 1156px;
+        height: 429px;
+        top: 12rem;
+        left: 136px
+    }
+    
+    .yt_insta {
+        position: inherit;
+        width: 1440px;
+        height: 572px;
+        top: 17rem;
+    }
+    
+    .online_cards {
+        position: relative;
+        top: -17rem;
+    }
+    
+    .onlineCard {
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        width: 230px !important;
+        height: 175px !important;
+        position: relative;
+        left: 5px;
+        border-radius: 10px;
+        border: 1px solid #5f5f5957;
+        /* margin-left: 1rem; */
+    }
+    
+    .online_images {
+        height: 7.5rem;
+        top: 1rem;
+        height: -6rem;
+        position: relative;
+        left: 1px;
+        width: 12.5rem;
+        border-radius: 10px;
+    }
+    
+    .fw_weight {
+        font-weight: 400;
+    }
