@@ -48,25 +48,25 @@
     
     @keyframes changeBackgroundImage {
         0% {
-            background-image: url("https://indiathrills.com/wp-content/uploads/2020/07/1334423290_e0fee7b87b_o-1-2.jpg");
+            background-image: url("../images/navbar/lake.jpg");
         }
         25% {
-            background-image: url("https://cf.bstatic.com/xdata/images/hotel/max1024x768/428101677.jpg?k=661a135eb19df3990938d8ea7293869bd5394456d14ea1e5620ff498a4e3e7d4&o=&hp=1");
+            background-image: url("../images/navbar/palace.jpg");
         }
         50% {
-            background-image: url('https://picsum.photos/id/1015/1500/1000');
+            background-image: url('../images/navbar/bg_image.jpg');
         }
         75% {
-            background-image: url("https://static2.tripoto.com/media/filter/tst/img/397931/TripDocument/1504160627_1504160618289.jpg");
+            background-image: url("../images/navbar/place1.jpg");
         }
         100% {
-            background-image: url('https://img.cdn.zostel.com/zostel/gallery/images/XvbIv6fcQVSu2z1bbw4CJA/udaipur-20201112105635.jpg');
+            background-image: url('../images/navbar/lake2.jpg');
         }
     }
     
     .scrol_left {
         top: 290px;
-        /* overflow: hidden; */
+        overflow: hidden;
         position: relative;
     }
     
@@ -84,9 +84,9 @@
         -moz-transform: translateX(100%);
         -webkit-transform: translateX(100%);
         transform: translateX(100%);
-        -moz-animation: scroll-left 15s linear;
-        -webkit-animation: scroll-left 15s linear;
-        animation: scroll-left 15s linear;
+        -moz-animation: scroll-left 15s linear infinite;
+        -webkit-animation: scroll-left 15s linear infinite;
+        animation: scroll-left 15s linear infinite;
     }
     /* Move it (define the animation) */
     
@@ -289,7 +289,7 @@ bottom: -4095px; */
     .weding_planning {
         position: relative;
         top: 550px;
-        left: 10rem;
+        left: 7.5rem;
     }
     
     .weding_planning1 {

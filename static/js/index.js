@@ -15,6 +15,11 @@ items.forEach((el) => {
 })
 
 
+// $(document).ready(function() {
+//     $('.navbar-brand').dropdown()
+// });
+
+
 // let online_items = document.querySelectorAll('.food_carousel .food_items ')
 
 // items.forEach((el) => {
